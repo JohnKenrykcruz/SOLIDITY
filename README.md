@@ -1,8 +1,18 @@
-# SOLIDITY
 
+#PROJECT
 
+##OVERVIEN
+This is a simple project for a token called "PHILIPPINE PESO with the abbreviation of "PHP". The project defines several public variables to store the details about the token, including the token m abbreviation, and total supply. The project also includes a mapping of addresses to balances, it also includes two functions: BURN and MINT.
+##CONTRACT DETAILS
 
+#MAPPING ADRESS
+This is a public mapping that associates each address with a balance. The address type is used as the key, and uint is the value type representing the balance of tokens. This mapping allows the contract to keep track of how many tokens each address holds. Since it's public, Solidity automatically generates a getter function to fetch the balance of a given address.
 
+##MINT FUNCTION
+ Mint function to increase the total supply and balance of an address function mint
+
+##BURN FUNCTION 
+Burn function to decrease the total supply and balance of an address
 
 ```solidity
 
@@ -15,6 +25,7 @@ contract MyToken {
     string public tokenName = "PHILIPPINE PESO";
     string public tokenAbbrv = "PHP";
     uint public totalSupply = 0;
+
 
     // Mapping of addresses to balances
     mapping(address => uint) public balances;
